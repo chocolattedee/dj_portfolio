@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>About</h1>
+<div class="clearfix">
+  {% for i in images %}
+            {% if images %}
+                <img class="col-md-6 float-md-end mb-3 ms-md-3" src="{{ i.image.url }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ about.title }}</h5>
+                <p class="card-text">{{ about.text_content }}</p>
+  {% endfor %}
+				<h5>Adaptable</h5>
+				<p>
+					Demonstrated exceptional resilience as a first responder in Twentynine Palms; promptly screening over 500 potentially infections patients during the start of the COVID pandemic, maintained preventive measures, and safeguarded the health of 800 fellow service members. Exemplified unwavering commitment to mission success and personal sacrifice in the face of adversity.
+				  </p>
+				<h5>Medical Innovator</h5>
+				  <p>
+					Spearheaded the implementation of the latest in cutting-edge medical systems; Responsible for mastering its intricacies as a SuperUser for my station, I led dozens of training sessions for doctors, nurses, and corpsmen to ensure the readiness and capability of our medical force with a limited transition window, empowering those same providers to cascade that knowledge along to others with the aim of revolutionizing patient management and medical history tracking across the Navy..
+				  </p>
+				<h5>Dynamic Leader</h5>
+				  <p>
+					Effectively managed and guided a team of ten junior sailors at any one time, providing comprehensive verbal and written counseling to promote their personal and professional advancement, fostering a culture of good order and discipline. Distinguished the clinic by excelling in the administration of vaccines to at-risk populaces and service members, surpassing all other stations charged with the same task in Florida. As a direct result, four of my juniors were promoted, exemplifying the profound impact of my leadership on their career progression and the overall success of the mission.
+				  </p>
+    		</div>
+
+</div>
+{% endblock %}

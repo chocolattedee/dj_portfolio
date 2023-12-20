@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>Home</h1>
+<div class="clearfix">
+{% for i in images %}
+            {% if images %}
+                <img class="col-md-6 float-md-end mb-3 ms-md-3" src="{{ i.image.url }}">
+            {% endif %}
+			{% endfor %}
+            <div class="card-body">
+                <h5 class="card-title">{{ about.title }}</h5>
+                <p class="card-text">{{ about.text_content }}</p>
+				<p>
+					<h5 class = 'banner_one'>banner_one</h5>
+					{% lorem 1 b random %}
+				  </p>
+				
+				  <p>
+					<h5 class = 'banner_two'>banner_two</h5>
+					{% lorem 1 b random %}
+				  </p>
+				
+				  <p>
+					<h5 class = 'banner_three'>banner_three</h5>
+					{% lorem 1 b random %}
+				  </p>
+    		</div>
+   
+</div>
+{% endblock %}
